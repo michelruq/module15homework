@@ -12,7 +12,6 @@ void throwHere(const std::string& text)
 int main (int argc, char* argv[])
 {
 	bool good = false;
-	setlocale(LC_CTYPE, "rus");
     try {
 
         
@@ -55,10 +54,10 @@ int main (int argc, char* argv[])
     }
 
     if (good) {
-        std::cout << "Тесты пройдены" << std::endl;
+        std::cout << "All Test Passed" << std::endl;
     }
     else {
-        std::cout << "Тесты провалены" << std::endl;
+        std::cout << "Test has been failed" << std::endl;
     }
     return 0;
 }
